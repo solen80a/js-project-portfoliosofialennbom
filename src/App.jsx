@@ -1,7 +1,8 @@
 import './index.css'
-import { Nav } from './Nav.jsx'
-import { Tech } from './Tech.jsx'
-import { ProjCard } from './ProjCard.jsx'
+import { Nav } from './components/Nav.jsx'
+import { Tech } from './components/Tech.jsx'
+import { ProjCard } from './components/ProjCard.jsx'
+import projects from "./data/projects.json"
 
 export const App = () => {
   return (
@@ -17,7 +18,18 @@ export const App = () => {
       <p>I’m a developer with a curious mindset, eager to learn and build thoughtful digital experiences. I value quality—not just in code, but in the impact it creates.</p>
       <p>Loyal and hands-on, I’m a team player who takes initiative and enjoys tackling challenges to deliver meaningful, well-crafted solutions.</p>
       <Tech /> 
-      <ProjCard /> 
+      <h2>Featured Projects</h2>      
+      {projects.projects.map((project) =>{
+        return (
+          <ProjCard
+          key={project.name} //something unique
+          name={project.name}
+          image={project.image}
+          // text={project.tag.join(", ")}
+          content={project.content}
+          />
+        )
+      })}
     </>
   )
 }
