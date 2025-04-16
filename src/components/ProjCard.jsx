@@ -1,5 +1,6 @@
 // import { Proj } from "./Proj"
 // import projects from "./data/projects.json"
+import "./ProjCard.css"
 
 export const ProjCard = ({ name, image, tags, content }) => {
   return (

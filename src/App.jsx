@@ -4,6 +4,7 @@ import { Tech } from './components/Tech.jsx'
 import { ProjCard } from './components/ProjCard.jsx'
 import projects from "./data/projects.json"
 
+
 export const App = () => {
   return (
     <>

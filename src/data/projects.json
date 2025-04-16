@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Portfolio in React",
-      "image": "../assets/malte-michels-s4wGZw3UuLk-unsplash.jpg",
+      "image": "assets/green_leaf.jpg",
       "tags": [
         "HTML5",
         "CSS3",        
