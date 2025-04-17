@@ -10,8 +10,8 @@
         "Node"
       ],
       "content": "My portfolio display my finished projects and show my learning journey from a beginner towards a skilled developer. The portfolio are a combination of team efforts and single projects where my journey started at Technigo JavaScript bootcamp and keeps on growing with new skills and projects.",
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://www.google.com/",
+      "github": "https://github.com/solen80a/js-project-portfoliosofialennbom"
     },
     {
       "name": "Accessibility Quiz in TypeScript",
@@ -23,8 +23,8 @@
         "TypeScript"        
       ],
       "content": "The Accessibility Quiz includes practice required WCAG guidelines, ARIA roles, and best practices for designing inclusive web experiences. By engaging with the quiz, users can assess their understanding and identify areas for improvement in creating accessible digital content. This was a team project where I contributed in the overall basic structure, JavaScript and TypeScript.",
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://fire2accessibility.netlify.app/",
+      "github": "https://github.com/solen80a/js-project-accessibility"
     }
   ]
 }

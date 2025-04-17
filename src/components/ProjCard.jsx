@@ -1,21 +1,18 @@
-// import { Proj } from "./Proj"
-// import projects from "./data/projects.json"
+
 import "./ProjCard.css"
 
-export const ProjCard = ({ name, image, tags, content }) => {
+export const ProjCard = ({ name, image, tags, content, netlify }) => {
   return (
-    <section>
+    <section>     
+      <img className="card-img" src={image} alt="" />
       <section>
         <p>{tags}</p>
       </section>
-      <img className="card-img" src={image} alt="" />
       <article>        
         <h3>{name}</h3>
         <p>{content}</p>
-        <div>
-          <button>Live demo</button>
-          <button>View Code</button>
-        </div>
+        <a href={netlify}></a>
+     
       </article>
       </section>
   )

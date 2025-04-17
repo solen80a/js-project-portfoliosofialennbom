@@ -1,17 +1,23 @@
-// const project = [
-//   { title: "Title 1", content: "Hejhej Citroner" },
-//   { title: "Title 2" },
-//   { title: "Title 3" },
-// ];
+import projects from "../data/projects.json"
+import { ProjCard } from "./ProjCard"
 
-// export const Proj = () => {
-//   <div>
-//   {project.map((project) => {
-//     return (
-     
-//       <h3>{project.title}</h3>
-      
-//     );
-//   })}
-// </div>
-// }
+export const Proj = () => {
+  return (
+    <section>
+    <h2>Featured Projects</h2>      
+    {projects.projects.map((project) =>{
+      return (
+        <ProjCard
+        key={project.name} //something unique
+        name={project.name}
+        image={project.image}
+        tags={project.tags.join(" ")}
+        content={project.content}
+        netlify={project.netlify}
+        />
+      )     
+  })}
+   </section>
+  )
+}
+
