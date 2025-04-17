@@ -13,8 +13,8 @@ export const Nav = () => {
   return (
 
   <header>
-    <div className="navigation">
-      <ul>
+    <div className="navigation" >
+      <ul className={`navigation-ul ${hamburgerOpen ? "open" : ""}`}>        
         <li>Tech</li>
         <li>Features Projects</li>
         <li>Skills</li>
@@ -25,11 +25,7 @@ export const Nav = () => {
 
     <div className="hamburger" onClick={toggleHamburger}>
       <Hamburger isOpen={hamburgerOpen}/>
-    </div>
-      
-    
-
-   
+    </div> 
   </header>  
 )
 }
