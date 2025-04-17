@@ -8,7 +8,7 @@ export const ProjCard = ({ name, image, tags, content }) => {
       <section>
         <p>{tags}</p>
       </section>
-      <img src={image} alt="" />
+      <img className="card-img" src={image} alt="" />
       <article>        
         <h3>{name}</h3>
         <p>{content}</p>
