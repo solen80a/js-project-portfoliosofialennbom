@@ -2,7 +2,7 @@ import "./Profile.css"
 
 export const Profile = () => {
   return (
-    <section>
+    <section id="main-content">
       <h3>Hi there I´m</h3> 
       <h1>Sofia Lennbom</h1>
       <img className="profile-img"

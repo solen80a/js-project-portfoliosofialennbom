@@ -13,7 +13,7 @@ export const Nav = () => {
   return (
 
   <header>
-    <div className="navigation" >
+    <nav className="navigation" role="navigation" aria-label="Main menu" >
       <ul className={`navigation-ul ${hamburgerOpen ? "open" : ""}`}>        
         <li>Tech</li>
         <li>Features Projects</li>
@@ -21,7 +21,7 @@ export const Nav = () => {
         <li>My Words</li>
         <li>Lets Talk</li>
       </ul>
-    </div>  
+    </nav>  
 
     <div className="hamburger" onClick={toggleHamburger}>
       <Hamburger isOpen={hamburgerOpen}/>
