@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer"
 export const App = () => {
   return (
     <>
-      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <Nav /> 
       <Profile />
       <Tech />

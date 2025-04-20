@@ -21,6 +21,7 @@
 /* Animation when open */
 .hamburger.open .burger1 {
   transform: rotate(45deg);
+  width: 1.35rem;
 }
 
 .hamburger.open .burger2 {
@@ -30,5 +31,6 @@
 
 .hamburger.open .burger3 {
   transform: rotate(-45deg);
+  width: 1.35rem;
 }
 

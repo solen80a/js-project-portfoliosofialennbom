@@ -8,7 +8,7 @@ export const Proj = () => {
     {projects.projects.map((project) =>{
       return (
         <ProjCard
-        key={project.name} //something unique
+        key={project.name} 
         name={project.name}
         image={project.image}
         tags={project.tags.join(" ")}

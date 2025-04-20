@@ -1,24 +1,24 @@
-.navigation{
+.navigation ul{
   display: none;
 }
 
 .hamburger{
   position: static;
-  /* display: block; */
+  /* display: block;   */
   padding-top: 10px;
   margin-left: 10px;
-  /* z-index: 10; */
+  z-index: 10;
   }
 
-  .navigation-ul.open{
-    display: none;
-    background: #191919;
-    color: white;
-    height: 100vh;
-    width: 50vw;        
-    margin-top: 50px;
-    position: absolute;
-    } 
+.hamburger.open{
+  display: inline;
+  background: #191919;
+  color: white;
+  height: 100vh;
+  width: 50vw;        
+  margin-top: 50px;
+  position: absolute;
+  } 
 
 
 /* Desktop Widescreen*/
@@ -37,7 +37,7 @@
     flex-wrap: wrap;
     float: right;
     margin: 20px 0px;
-    padding: 0 25px;
+    padding: 0px 25px;
   } 
   
   .navigation ul li{
