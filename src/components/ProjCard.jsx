@@ -1,4 +1,4 @@
-
+import { Button } from "./Button"
 import "./ProjCard.css"
 
 export const ProjCard = ({ name, image, tags, content, netlify }) => {
@@ -11,7 +11,18 @@ export const ProjCard = ({ name, image, tags, content, netlify }) => {
       <article>        
         <h3>{name}</h3>
         <p>{content}</p>
-        <a href={netlify}></a>
+
+        {/* how to get this inside the button? */}
+        <a href={netlify}></a> 
+        
+        <Button primarybtn>        
+       
+        </Button>
+        
+        <Button/>
+
+        <Button primarybtn>          
+        </Button>
      
       </article>
       </section>

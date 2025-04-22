@@ -1,11 +1,11 @@
 import "./index.css"
 
-import { Nav } from "./components/Nav"
-import { Profile } from "./components/Profile"
-import { Tech } from "./components/Tech"
+import { Nav } from "./sections/Nav"
+import { Profile } from "./sections/Profile"
+import { Tech } from "./sections/Tech"
 import { ProjCard } from "./components/ProjCard"
-import { Proj } from "./components/Proj"
-import { Footer } from "./components/Footer"
+import { Proj } from "./sections/Proj"
+import { Footer } from "./sections/Footer"
 
 
 
