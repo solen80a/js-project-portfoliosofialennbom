@@ -1,9 +1,4 @@
-.profile-img {
-  width: 144px;
-  height: 154px;
-  flex-shrink: 0;
-  border-radius: 12px;
-}
+
 
 /* Tablet */
 @media (min-width: 501px) and (max-width: 768px){

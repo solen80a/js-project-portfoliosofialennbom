@@ -1,13 +1,15 @@
 import styled from "styled-components"
+import projects from "../data/projects.json"
 
-const ButtonWrapper = styled.button`
+const ButtonWrapper = styled.a`
   display: flex;
-  background-color: ${props => (props.primarybtn ? "#434040" : "white")};
-  color: ${props => (props.primarybtn ? "white" : "#434040")};
+  background-color: ${props => (props.$primarybtn ? "#434040" : "white")};
+  color: ${props => (props.$primarybtn ? "white" : "#434040")};
   font-size: 18px;
   width: 303px;
   height: 48px;
   padding: 0 16px;
+  border: 2px solid #434040;
   border-radius: 12px;
   align-items: center;
   align-content: center;
@@ -16,25 +18,30 @@ const ButtonWrapper = styled.button`
   img{
   height: 31px;
   width: 31px;
-  filter: ${props => (props.primarybtn ? "invert(0%)" : "invert(100%)")};
+  filter: ${props => (props.$primarybtn ? "invert(0%)" : "invert(100%)")};
   }
 
-  /* &:hover{
+  &:hover{
     background-color: ${props => (props.primarybtn ? "white" : "#434040")}; 
     color: ${props => (props.primarybtn ? "#434040" : "white")};
 
   img {
     filter: ${props => (props.primarybtn ? "invert(100%)" : "invert(0%)")}
   } 
-}*/
+}
 `
 
-export const Button = ({ primarybtn }) => {
+export const Button = ({ $primarybtn }) => {
   return (
-    <ButtonWrapper primarybtn={primarybtn}>
+    // {projects.netlify}
+     
+    <ButtonWrapper href={projects.netlify} target="_blank">
 
-      <img primaryBtn={primarybtn} src="/assets/Ic-Web.svg" alt="" />
-      Live demo      
+      <img src="/assets/Ic-Web.svg" alt="" />    
+    
+          
     </ButtonWrapper>
+    
   )
 }
+
