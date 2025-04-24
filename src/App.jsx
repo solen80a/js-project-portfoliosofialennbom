@@ -8,15 +8,16 @@ import { Proj } from "./sections/Proj"
 import { Footer } from "./sections/Footer"
 import { NavCss } from "./sections/Nav"
 import { GlobalStyle } from "./components/GlobalStyle"
+import { SkipToMainContent } from "./sections/SkipToMain"
 
 
 
 export const App = () => {
   return (
     <>
+    
     <GlobalStyle />
-      <a href="#main-content" className="skip-link">Skip to main content</a>
-      
+    <SkipToMainContent />
       <Profile />
       <Tech />
       <ProjCard /> 

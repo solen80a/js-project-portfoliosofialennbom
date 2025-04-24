@@ -6,7 +6,7 @@ const FooterImg = styled.img`
  width: 164px;
   height: 164px;
   border-radius: 164px;
-  margin: 0 auto;
+  
   `
     
 

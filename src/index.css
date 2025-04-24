@@ -11,20 +11,3 @@ body {
   text-align: center;
 }
 
-/* Skip link with enhanced visibility */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: #434040;  
-  color: white;
-  padding: 8px;
-  z-index: 100;
-  transition: top 0.3s;
-}
-
-.skip-link:focus {
-  top: 0;
-  outline: #434040;
-  outline-offset: 2px;
-}
