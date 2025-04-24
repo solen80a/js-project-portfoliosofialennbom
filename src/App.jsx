@@ -22,8 +22,7 @@ export const App = () => {
     <GlobalStyle />
       <SkipToMainContent />
       <Profile />
-      <Tech />
-      
+      <Tech />      
       <Proj />
       <Skills />
       <MyWords 

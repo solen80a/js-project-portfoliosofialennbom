@@ -12,8 +12,7 @@ const ImgContainer = styled.div`
   height: 200px;
 `
 
-const ProfileImg = styled.img`
- 
+const ProfileImg = styled.img` 
 
 /* Tablet */
 @media ${Media.tablet}{  
@@ -61,14 +60,19 @@ const ProfileImg1 = styled(ProfileImg)`
     position: absolute;
     z-index: 1;    
   `
-
-
+  const Hello = styled.p`
+  font-size: 24px; 
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;   
+  `
 
 export const Profile = () => {
   return (
     <section id="main-content">
-      <H3>Hi there I´m</H3> 
+      <Hello>Hi there I´m</Hello> 
       <H1>Sofia Lennbom</H1>
+      <H3>Web Developer with a Background in Quality Assurance, Technical documentation and Training</H3>
       <ImgContainer>  
             
           <ProfileImg1 
@@ -87,9 +91,11 @@ export const Profile = () => {
           />
         
       </ImgContainer>
-      <H3>Web Developer with a Background in Quality Assurance, Technical documentation and Training</H3>
-      <Body>I’m a developer with a curious mindset, eager to learn and build thoughtful digital experiences. I value quality—not just in code, but in the impact it creates.</Body>
-      <Body>Loyal and hands-on, I’m a team player who takes initiative and enjoys tackling challenges to deliver meaningful, well-crafted solutions.</Body>
+      
+      <Body>
+        I’m a developer with a curious mindset, eager to learn and build thoughtful digital experiences. I value quality—not just in code, but in the impact it creates.
+        Loyal and hands-on, I’m a team player who takes initiative and enjoys tackling challenges to deliver meaningful, well-crafted solutions.
+      </Body>
     </section>
   )
   

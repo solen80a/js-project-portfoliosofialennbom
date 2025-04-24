@@ -2,9 +2,9 @@ import styled from "styled-components"
 import projects from "../data/projects.json"
 
 const ButtonWrapper = styled.a`
-  display: flex;
-  background-color: ${props => (props.$primarybtn ? "#434040" : "white")};
-  color: ${props => (props.$primarybtn ? "white" : "#434040")};
+  display: flex;  
+  background-color: #434040;
+  color: white;
   font-size: 18px;
   width: 303px;
   height: 48px;
@@ -17,29 +17,18 @@ const ButtonWrapper = styled.a`
 
   img{
   height: 31px;
-  width: 31px;
-  filter: ${props => (props.$primarybtn ? "invert(0%)" : "invert(100%)")};
-  }
-
-  &:hover{
-    background-color: ${props => (props.primarybtn ? "white" : "#434040")}; 
-    color: ${props => (props.primarybtn ? "#434040" : "white")};
-
-  img {
-    filter: ${props => (props.primarybtn ? "invert(100%)" : "invert(0%)")}
+  width: 31px;  
   } 
-}
+
 `
 
-export const Button = ({ $primarybtn, url }) => {
+export const Button = ({  url }) => {
   return (
     // {projects.netlify}
      
-    <ButtonWrapper href={url} target="_blank">
-
-      <img src="/assets/Ic-Web.svg" alt="" />    
-    
-          
+    <ButtonWrapper href={url} target="_blank" >
+      <img src="/assets/Ic-Web.svg" alt="" /> 
+      Live Demo          
     </ButtonWrapper>
     
   )

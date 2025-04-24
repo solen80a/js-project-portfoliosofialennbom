@@ -23,10 +23,14 @@ line-height: normal;
 }
 `
 export const H3 = styled.h3`
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+
+@media ${Media.tablet} {
+    font-size: 24px;
+}
 
 @media ${Media.desktop} {
     font-size: 30px;
@@ -37,6 +41,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+text-align: left;
 
 @media ${Media.desktop} {
     font-size: 18px;

@@ -15,7 +15,10 @@ export const Proj = () => {
         key={project.name} 
         name={project.name}
         image={project.image}
-        tags={project.tags.join(" ")}
+        tags={project.tags.map((tag) => {
+          return <button>{tag}</button>
+        })
+        }
         content={project.content}
         netlify={project.netlify}
         github={project.github}
