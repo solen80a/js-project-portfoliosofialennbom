@@ -18,6 +18,7 @@ export const Proj = () => {
         tags={project.tags.join(" ")}
         content={project.content}
         netlify={project.netlify}
+        github={project.github}
         
         />
       )     

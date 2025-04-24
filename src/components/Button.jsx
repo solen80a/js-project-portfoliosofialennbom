@@ -31,11 +31,11 @@ const ButtonWrapper = styled.a`
 }
 `
 
-export const Button = ({ $primarybtn }) => {
+export const Button = ({ $primarybtn, url }) => {
   return (
     // {projects.netlify}
      
-    <ButtonWrapper href={projects.netlify} target="_blank">
+    <ButtonWrapper href={url} target="_blank">
 
       <img src="/assets/Ic-Web.svg" alt="" />    
     

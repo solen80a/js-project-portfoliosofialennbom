@@ -11,6 +11,7 @@ import { SkipToMainContent } from "./sections/SkipToMain"
 import { Skills } from "./sections/Skills"
 import { MyWords } from "./sections/MyWords"
 import mywords from "./data/mywords.json";
+import projects from "./data/projects.json"
 
 
 
