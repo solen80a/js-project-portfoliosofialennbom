@@ -4,10 +4,10 @@ import { Media } from "../components/Media"
 
 export const Tech = () => {
   return (
-    <div>
+    <section>
     <H2>Tech</H2>
     <Body>HTML, CSS, Flexbox, CSS Grid, JavaScript, ES6, TypeScript, JSX, React, React Hooks, 
     Node.js,  Mongo DB, MSSQL, Web Accessibility, APIs, mob-programming, pair-programming,  Git, Jenkins, Jira.</Body>
-    </div>
+    </section>
   )
 }

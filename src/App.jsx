@@ -1,14 +1,16 @@
 import "./index.css"
 
-import { Nav } from "./sections/Nav"
+
 import { Profile } from "./sections/Profile"
 import { Tech } from "./sections/Tech"
 import { ProjCard } from "./components/ProjCard"
 import { Proj } from "./sections/Proj"
 import { Footer } from "./sections/Footer"
-import { NavCss } from "./sections/Nav"
 import { GlobalStyle } from "./components/GlobalStyle"
 import { SkipToMainContent } from "./sections/SkipToMain"
+import { Skills } from "./sections/Skills"
+import { MyWords } from "./sections/MyWords"
+import mywords from "./data/mywords.json";
 
 
 
@@ -17,11 +19,17 @@ export const App = () => {
     <>
     
     <GlobalStyle />
-    <SkipToMainContent />
+      <SkipToMainContent />
       <Profile />
       <Tech />
-      <ProjCard /> 
+      
       <Proj />
+      <Skills />
+      <MyWords 
+      mywords={mywords.mywords}
+      title={mywords.title}
+      
+      />
       <Footer />
     </>
   )

@@ -1,11 +1,14 @@
 import projects from "../data/projects.json"
 import { ProjCard } from "../components/ProjCard"
 import { Button } from "../components/Button"
+import { H2 } from "../components/Typography"
+import styled from "styled-components"
+
 
 export const Proj = () => {
   return (
     <section>
-    <h2>Featured Projects</h2>      
+    <H2>Featured Projects</H2>      
     {projects.projects.map((project) =>{
       return (
         <ProjCard

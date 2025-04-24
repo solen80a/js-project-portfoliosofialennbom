@@ -3,16 +3,17 @@ import { H1, H3, Body } from "../components/Typography"
 import styled from "styled-components"
 import { Media } from "../components/Media"
 
-const ProfileImg = styled.img`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+const ImgContainer = styled.div`
+  display: flex;  
+  justify-content: center; 
   align-items: center;
-  margin: 0 auto;
-  width: 144px;
-  height: 154px;
-  /* flex-shrink: 0; */
-  border-radius: 12px;
+  position: relative;  
+  width: 80%;   
+  height: 200px;
+`
+
+const ProfileImg = styled.img`
+ 
 
 /* Tablet */
 @media ${Media.tablet}{  
@@ -24,26 +25,44 @@ const ProfileImg = styled.img`
 @media ${Media.desktop}{  
     width: 418px;
     height: 418px;
+ 
 }
   `
 
-const ImgContainer = styled.div`
-  display: flex;  
-  justify-content: center; 
-  align-items: center;
+const ProfileImg1 = styled(ProfileImg)`
+  top: 0%;
+  right: 50%;
+  
   margin: 0 auto;
-  width: 315px;
-  height: 171px;
-  position: relative;
-`
+  width: 144px;
+  height: 154px;  
+  border-radius: 12px;
+  position: absolute;
+  z-index: 1;    
+  `
 
-const PopImage = styled.div`
-  transform: ${props => (props.$iscenter ? "scale(5)" : "scale(1)")};
-  z-index: ${props => (props.$iscenter ? "2" : "1")};
-  margin: 0 -20px;
-  position: relative;
-  transition: transform 0.3s ease;
-`;     
+  const ProfileImg2 = styled(ProfileImg)`
+    top: 0%;
+    margin: 0 auto;
+    width: 144px;
+    height: 154px;  
+    border-radius: 12px;
+    position: absolute;
+    z-index: 2;    
+  `
+
+  const ProfileImg3 = styled(ProfileImg)`
+   top: 0%;
+   left: 50%;
+    margin: 0 auto;
+    width: 144px;
+    height: 154px;  
+    border-radius: 12px;
+    position: absolute;
+    z-index: 1;    
+  `
+
+
 
 export const Profile = () => {
   return (
@@ -51,24 +70,22 @@ export const Profile = () => {
       <H3>Hi there I´m</H3> 
       <H1>Sofia Lennbom</H1>
       <ImgContainer>  
-        <PopImage>     
-          <ProfileImg 
+            
+          <ProfileImg1 
           src="assets/screen.svg"
           alt="An image of a screen and a plant"
           />
-        </PopImage> 
-        <PopImage iscenter="true"> 
-          <ProfileImg
+       
+          <ProfileImg2 
           src="assets/sofia_lennbom_black_white.svg"
           alt="Black and white portrait of Sofia Lennbom, a web developer"
           />
-        </PopImage> 
-        <PopImage> 
-          <ProfileImg 
+       
+          <ProfileImg3 
           src="assets/laptop.svg"
           alt="An image of a laptop and a plant"      
           />
-        </PopImage> 
+        
       </ImgContainer>
       <H3>Web Developer with a Background in Quality Assurance, Technical documentation and Training</H3>
       <Body>I’m a developer with a curious mindset, eager to learn and build thoughtful digital experiences. I value quality—not just in code, but in the impact it creates.</Body>
