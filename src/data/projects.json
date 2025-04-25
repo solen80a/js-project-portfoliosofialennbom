@@ -15,7 +15,7 @@
     },
     {
       "name": "Accessibility Quiz in TypeScript",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "image": "../assets/accessibility.svg",
       "tags": [
         "HTML5",
         "CSS3",
@@ -25,6 +25,32 @@
       "content": "The Accessibility Quiz includes practice required WCAG guidelines, ARIA roles, and best practices for designing inclusive web experiences. By engaging with the quiz, users can assess their understanding and identify areas for improvement in creating accessible digital content. This was a team project where I contributed in the overall basic structure, JavaScript and TypeScript.",
       "netlify": "https://fire2accessibility.netlify.app/",
       "github": "https://github.com/solen80a/js-project-accessibility"
+    },
+    {
+      "name": "Weather App in TypeScript",
+      "image": "../assets/weather.svg",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "TypeScript",
+        "API"        
+      ],
+      "content": "Heather Weather is a sleek and responsive weather app built with TypeScript. This app fetches data from the OpenWeather API and features UI with animations that enhance the user experience. It adapts perfectly to different screen sizes for a seamless experience. This was a team project where I contributed with the overall basic structure, API fetch and TypeScript.",
+      "netlify": "https://heatherweather.netlify.app/",
+      "github": "https://github.com/solen80a/js-project-weather-app"
+    },
+    {
+      "name": "Recipie Library in JavaScript",
+      "image": "../assets/RecLib.svg",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "API"        
+      ],
+      "content": "This recipe library fetch real recipe data from the Spoonacular API. Users can select filter for diets, and sorting most/least popular and If the user prefer a random button can be clicked to display a radom item.",
+      "netlify": "https://sofias-recipe-library.netlify.app/",
+      "github": "https://github.com/solen80a/js-project-recipe-library"
     }
   ]
 }
