@@ -60,7 +60,7 @@ export const GlobalStyle = createGlobalStyle`
     align-items: center;    
   }
 
-  button {
+  /* button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,5 +72,5 @@ export const GlobalStyle = createGlobalStyle`
     color: #434040;
     font-size: 16px;
        
-  }
+  } */
 `;

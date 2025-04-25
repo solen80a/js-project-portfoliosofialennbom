@@ -15,7 +15,7 @@ export const Proj = () => {
         name={project.name}
         image={project.image}
         tags={project.tags.map((tag) => {
-          return <TagButton projtag>{tag}</TagButton>
+          return <TagButton $projtag>{tag}</TagButton>
         })
         }
         content={project.content}

@@ -5,6 +5,7 @@ import { Media } from "./Media"
 
 import { Proj } from "../sections/Proj"
 import projects from "../data/projects.json"
+import { TagButton } from "../components/TagButton"
 
 const ProjectCardImg = styled.img`
   width: 100%;
