@@ -1,8 +1,7 @@
 import projects from "../data/projects.json"
 import { ProjCard } from "../components/ProjCard"
-import { Button } from "../components/Button"
 import { H2 } from "../components/Typography"
-import styled from "styled-components"
+import { TagButton } from "../components/TagButton"
 
 
 export const Proj = () => {
@@ -16,7 +15,7 @@ export const Proj = () => {
         name={project.name}
         image={project.image}
         tags={project.tags.map((tag) => {
-          return <button>{tag}</button>
+          return <TagButton projtag>{tag}</TagButton>
         })
         }
         content={project.content}
