@@ -6,13 +6,51 @@ const FooterImg = styled.img`
  width: 164px;
   height: 164px;
   border-radius: 164px;
-  
+  align-items: center;
   `
+
+  const FooterContainer = styled.footer `
+  background-color: #434040;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  
+  
+  & p {
+    font-size: 24px;    
+  }
+
+  & a {
+    font-size: 24px;
+    color: white; 
+    
+  }
+  `
+
+  const FooterDiv = styled.div `
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  `
+const FooterIconContainer = styled.div `
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+
+& .linkedin {
+    filter: invert(100%);
+  
+}
+`
     
 
 export const Footer = () => {
   return(
-    <footer>
+    <FooterContainer>
       <H2>Let´s talk</H2>
       <div>
         <FooterImg  
@@ -21,16 +59,19 @@ export const Footer = () => {
           alt="Profile image of the developer"
        />
       </div>
-      <div>      
-        <Body>Sofia Lennbom</Body>
-        <div>
-          <a href= "+46705623461">+46(0)705 62 34 61</a>
-        </div>
-        <div>
-          <a href="sofialennbom@gmail.com">sofialennbom@gmail.com</a>
-        </div>
-      </div>
-
-    </footer>
+      <FooterDiv>      
+        <Body>Sofia Lennbom</Body>        
+        <a href= "+46705623461">+46(0)705 62 34 61</a>       
+        <a href="sofialennbom@gmail.com">sofialennbom@gmail.com</a>        
+      </FooterDiv>
+      <FooterIconContainer>
+        <a href="https://www.linkedin.com/in/sofia-lennbom-91252195/" target="_blank" rel="noopener noreferrer">
+          <img className="linkedin" src="assets/Btn - linkedin.svg" alt="LinkedIn icon" />
+        </a>
+        <a href="https://github.com/solen80a" target="_blank" rel="noopener noreferrer">
+          <img src="assets/Btn - github.svg" alt="Github icon" />
+        </a>
+      </FooterIconContainer>
+    </FooterContainer>
   )
 }
