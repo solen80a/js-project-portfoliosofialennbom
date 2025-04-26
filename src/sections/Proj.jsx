@@ -4,6 +4,7 @@ import { H2 } from "../components/Typography"
 import { TagButton } from "../components/TagButton"
 
 
+
 export const Proj = () => {
   return (
     <section>
@@ -15,18 +16,21 @@ export const Proj = () => {
         name={project.name}
         image={project.image}
         tags={project.tags.map((tag) => {
-          return <TagButton $projtag>{tag}</TagButton>
-        })
-        }
+            return <TagButton $projtag>{tag}</TagButton>
+          })}
         content={project.content}
         netlify={project.netlify}
-        github={project.github}
-        
-        />
+        github={project.github}        
+        netlifyIcon="/assets/Ic-Web.svg"
+        netlifyAlt="Icon of a globe to represent the live demo"
+        netlifyTitle="Live Demo"
+        githubIcon="/assets/Btn - github.svg"
+        githubAlt="GitHub icon"
+        githubTitle="View Code">
+        </ProjCard> 
       )     
-  })}
-
-   </section>
+      })}
+    </section>
   )
 }
 

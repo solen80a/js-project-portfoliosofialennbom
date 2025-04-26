@@ -18,17 +18,24 @@ const MyWordsImage = styled.img`
 `;
 
 
-export const MyWordsCard = ({image, alt, tag, name, content}) => {
+export const MyWordsCard = ({image, alt, tag, name, content, link, myWordsIcon, 
+  myWordsAlt, 
+  myWordsTitle}) => {
   return (
-    <>    
+    <section>    
     <MyWordsImage src={image} alt={alt} />    
     <MyWordsCardContainer>      
       <Body>{tag}</Body>
       <H3>{name}</H3>
       <Body>{content}</Body>
-      <Button>Read Article</Button>
+      <Button 
+        url={link} 
+        icon={myWordsIcon} 
+        alt={myWordsAlt} 
+        title={myWordsTitle} 
+        />        
       </MyWordsCardContainer>
-    </>
+    </section>
   )
 
 

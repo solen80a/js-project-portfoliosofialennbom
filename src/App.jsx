@@ -12,6 +12,7 @@ import { Skills } from "./sections/Skills"
 import { MyWords } from "./sections/MyWords"
 import mywords from "./data/mywords.json";
 import projects from "./data/projects.json"
+import { Button } from "./components/Button"
 
 
 
@@ -25,11 +26,7 @@ export const App = () => {
       <Tech />      
       <Proj />
       <Skills />
-      <MyWords 
-      mywords={mywords.mywords}
-      title={mywords.title}
-      
-      />
+      <MyWords />    
       <Footer />
     </>
   )

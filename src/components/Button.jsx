@@ -22,13 +22,12 @@ const ButtonWrapper = styled.a`
 
 `
 
-export const Button = ({  url }) => {
+export const Button = ({  url, icon, alt, title }) => {
   return (
-    // {projects.netlify}
-     
+         
     <ButtonWrapper href={url} target="_blank" >
-      <img src="/assets/Ic-Web.svg" alt="" /> 
-      Live Demo          
+      <img src={icon} alt={alt} /> 
+      {title}         
     </ButtonWrapper>
     
   )

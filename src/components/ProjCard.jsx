@@ -20,7 +20,12 @@ const TagWrapper = styled.p`
   border-radius: 12px;
 `
 
-export const ProjCard = ({ name, image, tags, content, netlify, github }) => {
+export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyIcon,
+  netlifyAlt,
+  netlifyTitle,
+  githubIcon,
+  githubAlt,
+  githubTitle }) => {
   return (
     <section>     
       <ProjectCardImg src={image} alt="" />      
@@ -28,8 +33,18 @@ export const ProjCard = ({ name, image, tags, content, netlify, github }) => {
       <article>        
         <H3>{name}</H3>
         <Body>{content}</Body>  
-      <Button  url={netlify} target _blank ></Button>        
-      <Button url={github} target _blank></Button> 
+        <Button 
+          url={netlify} 
+          icon={netlifyIcon} 
+          alt={netlifyAlt} 
+          title={netlifyTitle} 
+          />
+        <Button 
+          url={github} 
+          icon={githubIcon} 
+          alt={githubAlt} 
+          title={githubTitle} 
+          /> 
       </article>
     </section>
   )
