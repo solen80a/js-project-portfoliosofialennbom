@@ -14,10 +14,13 @@ const ButtonWrapper = styled.a`
   align-items: center;
   align-content: center;
   gap: 16px;
+  margin-right: auto; 
+  
 
   img{
   height: 31px;
-  min-width: 31px;  
+  min-width: 31px;
+  
   } 
 
 `

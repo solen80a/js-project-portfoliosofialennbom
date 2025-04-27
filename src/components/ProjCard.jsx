@@ -7,10 +7,14 @@ import { Proj } from "../sections/Proj"
 import projects from "../data/projects.json"
 import { TagButton } from "../components/TagButton"
 
-const ProjectCardContainer = styled.article`
+const ProjectCardContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  gap: 128px;
+  padding: 64px;
+  margin: 24px;
 
  /* Tablet */
  @media ${Media.tablet}{  
@@ -23,37 +27,32 @@ const ProjectCardContainer = styled.article`
     justify-content: center;  
     height: 418px;       
     align-items: center; 
-
-    &:nth-child(odd) {
-      justify-content: flex-start;
-      text-align: left;
-    }
-
-    &:nth-child(even) {
-      justify-content: flex-end;
-      text-align: right;
-    }
 }
 `   
 
-const ProjectCardImg = styled.img` 
-min-width: 144px;
-height: 154px;
+const ProjectCardContent = styled.article`
+/* min-width: 479px;
+height: 100%;
 
-/* Tablet */
-@media ${Media.tablet}{  
-    width: 260px;
-    height: 277px;
-}
+  a {
+    text-align: left; 
+  }
 
 /* Desktop Widescreen */
-@media ${Media.desktop}{  
-    width: 418px;
-    height: 418px;
- 
+/*@media ${Media.desktop}{ 
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 580px;   
+  align-items: center; 
+    
+  img {
+    
+    margin-right: auto;
 }
- 
+} */
 `
+
 const TagWrapper = styled.p`
   display: flex;
   justify-content: space-between;
@@ -71,10 +70,10 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
   return (
     <>  
     <ProjectCardContainer>   
-      <ProjectCardImg src={image} alt="" />      
+      <img src={image} alt="" />      
           
-      <article> 
-      <TagWrapper>{tags}</TagWrapper>        
+      <ProjectCardContent> 
+        <TagWrapper>{tags}</TagWrapper>        
         <H3>{name}</H3>
         <Body>{content}</Body>  
         <Button 
@@ -89,7 +88,7 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
           alt={githubAlt} 
           title={githubTitle} 
           /> 
-      </article>
+      </ProjectCardContent>
       </ProjectCardContainer>
     </>
   )

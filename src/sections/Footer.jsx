@@ -5,8 +5,11 @@ import { Media } from "../components/Media"
 const FooterImg = styled.img`
   min-width: 164px;
   min-height: 164px;
-  border-radius: 164px;
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
   align-items: center;
+  align-self: center;
   `
 
   const FooterContainer = styled.footer `
@@ -15,7 +18,9 @@ const FooterImg = styled.img`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  width: 100vw;
+   
   
   
   & p {
@@ -32,8 +37,10 @@ const FooterImg = styled.img`
 const FooterDiv = styled.div `
 display: flex;
 flex-direction: column;
-align-items: flex-start;
+align-items: center;
 gap: 8px;
+margin: 16px 0;
+
 `
 const FooterIconContainer = styled.div `
 display: flex;

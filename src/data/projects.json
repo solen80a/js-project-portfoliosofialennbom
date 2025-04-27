@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Portfolio in React",
-      "image": "assets/green_leaf.jpg",
+      "image": "assets/green_leaf.svg",
       "tags": [
         "HTML5",
         "CSS3",        

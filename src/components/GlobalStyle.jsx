@@ -26,7 +26,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, p {
-    
+    margin: 0;
+    padding: 0;
   } 
 
   img {
@@ -43,8 +44,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 64px 16px;
     flex-direction: column;
     align-items: center;
-    gap: 16px;    
-    
+    gap: 16px;     
   }
 
   div {
@@ -56,10 +56,26 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   article {
+    min-width: 479px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{ 
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      width: 580px;   
+      align-items: center; 
+        
+      img {
+        
+        margin-right: auto;
+    }
+    }
   }
 `
 ;
