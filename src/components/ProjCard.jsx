@@ -3,18 +3,16 @@ import styled from "styled-components"
 import { H3, Body } from "./Typography"
 import { Media } from "./Media"
 
-import { Proj } from "../sections/Proj"
-import projects from "../data/projects.json"
-import { TagButton } from "../components/TagButton"
+
+
 
 const ProjectCardContainer = styled.section`
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
+  align-items: center; 
   gap: 128px;
   padding: 64px;
-  margin: 24px;
+  margin: 24px; 
 
  /* Tablet */
  @media ${Media.tablet}{  
@@ -28,29 +26,21 @@ const ProjectCardContainer = styled.section`
     height: 418px;       
     align-items: center; 
 }
+
+& p {
+  width: 80%;
+
+  /* Desktop Widescreen */
+@media ${Media.desktop}{   
+    width: 100%; 
+}
+
+}
 `   
 
 const ProjectCardContent = styled.article`
-/* min-width: 479px;
-height: 100%;
+gap: 10px;
 
-  a {
-    text-align: left; 
-  }
-
-/* Desktop Widescreen */
-/*@media ${Media.desktop}{ 
-  display: flex;
-  justify-content: center; 
-  align-items: center;     
-  width: 580px;   
-  align-items: center; 
-    
-  img {
-    
-    margin-right: auto;
-}
-} */
 `
 
 const TagWrapper = styled.p`
