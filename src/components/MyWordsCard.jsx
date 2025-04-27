@@ -14,8 +14,11 @@ const MyWordsCardContainer = styled.article`
   margin: 24px;
 
   /* Tablet */
- @media ${Media.tablet}{  
-    height: 277px;
+ @media ${Media.tablet}{ 
+  flex-direction: row; 
+  gap: 32px;
+  /* padding: 32px;   
+  margin: 24px; */
 }
 
 /* Desktop Widescreen */
@@ -50,7 +53,21 @@ const TagWrapper = styled.p`
 `
 
 const MyWordsImage = styled.img`
-  width: 479px;  
+  width: 200px;
+  
+  
+  /* Tablet */
+ @media ${Media.tablet}{ 
+  min-width: 200px; 
+  width: 300px;
+   
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{      
+    width: 479px;      
+    
+}
 `
 
 const MyWordsCardContent = styled.article`

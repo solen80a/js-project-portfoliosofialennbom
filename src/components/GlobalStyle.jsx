@@ -42,7 +42,14 @@ export const GlobalStyle = createGlobalStyle`
     height: auto;
     margin: 0;
     border-radius: 12px;
-    align-self: stretch;
+
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{   
+      
+      align-self: stretch;      
+      
+    }
+    
   }
 
   section {
