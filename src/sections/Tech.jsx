@@ -6,7 +6,8 @@ const TechWrapper = styled.section`
 background-color: #434040;
 color: white;
 gap: 16px;
-width: 100%;
+
+width: 100vw;
 `
 const H2 = styled.h2`
 font-size: 60px;

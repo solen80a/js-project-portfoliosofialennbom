@@ -68,7 +68,7 @@ const ProfileImg1 = styled(ProfileImg)`
 
 const ProfileImg2 = styled(ProfileImg)`
   top: 0%;
-  left: 10%;
+  left: 25%;
   margin: 0 auto;
   width: 144px;
   height: 154px;  

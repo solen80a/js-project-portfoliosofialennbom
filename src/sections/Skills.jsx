@@ -8,20 +8,50 @@ background-color: #434040;
 color: white;
 display: flex;
 flex-direction: column;
-align-items: center;
 justify-content: center;
-/* width: 343px;
-height: 791px; */
+width: 100vw;
+
+& h2 {
+  align-items: center;
+  text-align: center;  
+}
 `
 
 const SkillsContainer = styled.div`
-
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+flex-wrap: wrap;
 gap: 24px;  
+
+/* Tablet */
+@media ${Media.tablet}{    
+  align-items: center;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{         
+    align-items: center; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    & button {
+      
+      
+    }
+
+    & div {
+      grid-row: 1 / 2;
+      align-items: center;
+      justify-content: center;
+    }
+
+}
 `
 
 const SkillsList = styled.ul`
-display: flex;
-flex-wrap: wrap;
+text-align: left;
 float: right;
 margin: 20px 0px;
 padding: 0px 25px;
@@ -32,25 +62,22 @@ font-weight: 400;
 line-height: normal;
 list-style-type: none;
 
-
-
-
-& li {
- 
-  
+/* Tablet */
+@media ${Media.tablet}{  
+  text-align: center;
 }
+
 `
-
-
-
 
 export const Skills = () => {
 return (
   <>
   <SkillsSection>
     <H2>Skills</H2>
-  <SkillsContainer>
-  <TagButton>Code</TagButton>
+  <SkillsContainer> 
+  <div>
+    <TagButton>Code</TagButton>  
+  </div>
   <SkillsList>    
     <li>HTML5</li>
     <li>CSS3</li>
@@ -62,7 +89,9 @@ return (
     <li>Jenkins</li>
     <li>MSSQL</li>
   </SkillsList>
-  <TagButton>Toolbox</TagButton>
+  <div>
+    <TagButton>Toolbox</TagButton>
+  </div>
   <SkillsList>
     <li>Figma</li>
     <li>Slack</li>
@@ -70,12 +99,16 @@ return (
     <li>Confluence</li>
     <li>Office 365</li>   
   </SkillsList>
-  <TagButton>Upcomming</TagButton>
+  <div>
+    <TagButton>Upcomming</TagButton>
+  </div>
   <SkillsList>
     <li>Node.js</li>
     <li>Mongo DB</li>    
   </SkillsList>
-  <TagButton>More</TagButton>
+  <div>
+    <TagButton>More</TagButton>
+  </div>
   <SkillsList>
     <li>Branding</li>
     <li>Strategy</li>

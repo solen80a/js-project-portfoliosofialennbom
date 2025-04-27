@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Media } from "./Media";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -17,8 +18,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-   
+    text-align: center;   
   }
 
   a {
@@ -44,7 +44,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 64px 16px;
     flex-direction: column;
     align-items: center;
-    gap: 16px;     
+    gap: 16px; 
+    width: 100vw;    
   }
 
   div {
