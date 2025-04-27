@@ -1,5 +1,5 @@
 
-import { H1, H3, Body } from "../components/Typography"
+import { H1, Body } from "../components/Typography"
 import styled from "styled-components"
 import { Media } from "../components/Media"
 

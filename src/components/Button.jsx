@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import projects from "../data/projects.json"
 import { Media } from "./Media"
 
 const ButtonWrapper = styled.a`

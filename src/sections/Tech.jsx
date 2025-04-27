@@ -1,6 +1,6 @@
 
 import styled from "styled-components"
-import { Media } from "../components/Media"
+
 
 const TechWrapper = styled.section`
 background-color: #434040;

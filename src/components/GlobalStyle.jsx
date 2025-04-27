@@ -3,11 +3,8 @@ import { Media } from "./Media";
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    box-sizing: border-box;
-    /* margin: 0;
-    padding: 0; */
-    align-items: center;
-    /* border: 2px solid red; */
+    box-sizing: border-box;   
+    align-items: center;    
   }
 
   body {

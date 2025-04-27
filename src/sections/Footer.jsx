@@ -1,6 +1,6 @@
 import { H2, Body } from "../components/Typography"
 import styled from "styled-components"
-import { Media } from "../components/Media"
+
 
 const FooterImg = styled.img`
   min-width: 164px;
