@@ -17,7 +17,7 @@ const ButtonWrapper = styled.a`
 
   img{
   height: 31px;
-  width: 31px;  
+  min-width: 31px;  
   } 
 
 `

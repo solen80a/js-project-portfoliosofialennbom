@@ -14,6 +14,9 @@ const ImgContainer = styled.div`
 
 const ProfileImg = styled.img` 
 
+min-width: 144px;
+height: 154px;
+
 /* Tablet */
 @media ${Media.tablet}{  
     width: 260px;
@@ -30,42 +33,82 @@ const ProfileImg = styled.img`
 
 const ProfileImg1 = styled(ProfileImg)`
   top: 0%;
-  right: 50%;
-  
+  right: 50%;  
   margin: 0 auto;
   width: 144px;
   height: 154px;  
   border-radius: 12px;
   position: absolute;
-  z-index: 1;    
+  z-index: 1;  
+  
+  /* Tablet */
+@media ${Media.tablet}{  
+    width: 260px;
+    height: 277px;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{  
+    width: 418px;
+    height: 418px;
+ 
+}
   `
 
-  const ProfileImg2 = styled(ProfileImg)`
-    top: 0%;
-    margin: 0 auto;
-    width: 144px;
-    height: 154px;  
-    border-radius: 12px;
-    position: absolute;
-    z-index: 2;    
-  `
+const ProfileImg2 = styled(ProfileImg)`
+  top: 0%;
+  left: 10%;
+  margin: 0 auto;
+  width: 144px;
+  height: 154px;  
+  border-radius: 12px;
+  position: absolute;
+  z-index: 2;  
+  
+  /* Tablet */
+@media ${Media.tablet}{      
+    right: 20%;
+    width: 260px;
+    height: 277px;
+}
 
-  const ProfileImg3 = styled(ProfileImg)`
-   top: 0%;
-   left: 50%;
-    margin: 0 auto;
-    width: 144px;
-    height: 154px;  
-    border-radius: 12px;
-    position: absolute;
-    z-index: 1;    
-  `
-  const Hello = styled.p`
+/* Desktop Widescreen */
+@media ${Media.desktop}{  
+    width: 418px;
+    height: 418px;
+ 
+}
+`
+
+const ProfileImg3 = styled(ProfileImg)`
+  top: 0%;
+  left: 50%;
+  margin: 0 auto;
+  width: 144px;
+  height: 154px;  
+  border-radius: 12px;
+  position: absolute;
+  z-index: 1;  
+  
+  /* Tablet */
+@media ${Media.tablet}{  
+    width: 260px;
+    height: 277px;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{  
+    width: 418px;
+    height: 418px;
+ 
+}
+`
+const Hello = styled.p`
   font-size: 24px; 
   font-style: normal;
   font-weight: 500;
   line-height: normal;   
-  `
+`
 
 export const Profile = () => {
   return (

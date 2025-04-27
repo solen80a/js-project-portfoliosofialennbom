@@ -3,8 +3,8 @@ import styled from "styled-components"
 import { Media } from "../components/Media"
 
 const FooterImg = styled.img`
- width: 164px;
-  height: 164px;
+  min-width: 164px;
+  min-height: 164px;
   border-radius: 164px;
   align-items: center;
   `
@@ -29,12 +29,12 @@ const FooterImg = styled.img`
   }
   `
 
-  const FooterDiv = styled.div `
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  `
+const FooterDiv = styled.div `
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+`
 const FooterIconContainer = styled.div `
 display: flex;
 flex-direction: row;
@@ -45,6 +45,10 @@ justify-content: center;
     filter: invert(100%);
   
 }
+`
+const FooterIcon = styled.img`
+ min-width: 32px;
+ min-height: 32px;
 `
     
 
@@ -66,10 +70,10 @@ export const Footer = () => {
       </FooterDiv>
       <FooterIconContainer>
         <a href="https://www.linkedin.com/in/sofia-lennbom-91252195/" target="_blank" rel="noopener noreferrer">
-          <img className="linkedin" src="assets/Btn - linkedin.svg" alt="LinkedIn icon" />
+          <FooterIcon className="linkedin" src="assets/Btn - linkedin.svg" alt="LinkedIn icon" />
         </a>
         <a href="https://github.com/solen80a" target="_blank" rel="noopener noreferrer">
-          <img src="assets/Btn - github.svg" alt="Github icon" />
+          <FooterIcon src="assets/Btn - github.svg" alt="Github icon" />
         </a>
       </FooterIconContainer>
     </FooterContainer>

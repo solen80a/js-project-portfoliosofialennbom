@@ -12,9 +12,7 @@ const MyWordsCardContainer = styled.article`
 `;
 
 const MyWordsImage = styled.img`
-  width: 479px;
-  align-self: stretch;
-  border-radius: 12px
+  width: 479px;  
 `;
 
 
@@ -22,7 +20,7 @@ export const MyWordsCard = ({image, alt, tag, name, content, link, myWordsIcon,
   myWordsAlt, 
   myWordsTitle}) => {
   return (
-    <section>    
+    <>    
     <MyWordsImage src={image} alt={alt} />    
     <MyWordsCardContainer>      
       <Body>{tag}</Body>
@@ -35,7 +33,7 @@ export const MyWordsCard = ({image, alt, tag, name, content, link, myWordsIcon,
         title={myWordsTitle} 
         />        
       </MyWordsCardContainer>
-    </section>
+    </>
   )
 
 

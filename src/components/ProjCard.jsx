@@ -8,8 +8,10 @@ import projects from "../data/projects.json"
 import { TagButton } from "../components/TagButton"
 
 const ProjectCardImg = styled.img`
-  width: 100%;
-  /* height: 70%; */
+ 
+ 
+  /* height: 479px; */
+  /* align-self: stretch; */
  
 `
 const TagWrapper = styled.p`
@@ -27,7 +29,7 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
   githubAlt,
   githubTitle }) => {
   return (
-    <section>     
+    <>     
       <ProjectCardImg src={image} alt="" />      
       <TagWrapper>{tags}</TagWrapper>     
       <article>        
@@ -46,6 +48,6 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
           title={githubTitle} 
           /> 
       </article>
-    </section>
+    </>
   )
 }
