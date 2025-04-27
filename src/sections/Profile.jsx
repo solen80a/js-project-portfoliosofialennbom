@@ -127,7 +127,7 @@ export const Profile = () => {
     <section id="main-content">
       <Hello>Hi there I´m</Hello> 
       <H1>Sofia Lennbom</H1>
-      <H3>Web Developer with a Background in Quality Assurance, Technical documentation and Training</H3>
+      <Hello>Web Developer with a Background in Quality Assurance, Technical documentation and Training</Hello>
       <ImgContainer>  
             
           <ProfileImg1 

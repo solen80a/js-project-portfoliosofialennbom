@@ -25,10 +25,16 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-  h1, h2, h3, p {
+  h1, h2, p {
     margin: 0;
     padding: 0;
   } 
+
+  h3 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
 
   img {
     min-width: 300px;    
