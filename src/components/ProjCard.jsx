@@ -7,11 +7,51 @@ import { Proj } from "../sections/Proj"
 import projects from "../data/projects.json"
 import { TagButton } from "../components/TagButton"
 
-const ProjectCardImg = styled.img`
+const ProjectCardContainer = styled.article`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ /* Tablet */
+ @media ${Media.tablet}{  
+    height: 277px;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{   
+    flex-direction: row;
+    justify-content: center;  
+    height: 418px;       
+    align-items: center; 
+
+    &:nth-child(odd) {
+      justify-content: flex-start;
+      text-align: left;
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+      text-align: right;
+    }
+}
+`   
+
+const ProjectCardImg = styled.img` 
+min-width: 144px;
+height: 154px;
+
+/* Tablet */
+@media ${Media.tablet}{  
+    width: 260px;
+    height: 277px;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{  
+    width: 418px;
+    height: 418px;
  
- 
-  /* height: 479px; */
-  /* align-self: stretch; */
+}
  
 `
 const TagWrapper = styled.p`
@@ -29,10 +69,12 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
   githubAlt,
   githubTitle }) => {
   return (
-    <>     
+    <>  
+    <ProjectCardContainer>   
       <ProjectCardImg src={image} alt="" />      
-      <TagWrapper>{tags}</TagWrapper>     
-      <article>        
+          
+      <article> 
+      <TagWrapper>{tags}</TagWrapper>        
         <H3>{name}</H3>
         <Body>{content}</Body>  
         <Button 
@@ -48,6 +90,7 @@ export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyI
           title={githubTitle} 
           /> 
       </article>
+      </ProjectCardContainer>
     </>
   )
 }

@@ -10,10 +10,21 @@ const ImgContainer = styled.div`
   position: relative;  
   width: 80%;   
   height: 200px;
+
+  /* Tablet */
+@media ${Media.tablet}{      
+    height: 277px;
+}
+
+/* Desktop Widescreen */
+@media ${Media.desktop}{     
+    height: 418px;
+ 
+}
 `
 
 const ProfileImg = styled.img` 
-
+align-items: center;
 min-width: 144px;
 height: 154px;
 
@@ -67,13 +78,14 @@ const ProfileImg2 = styled(ProfileImg)`
   
   /* Tablet */
 @media ${Media.tablet}{      
-    right: 20%;
+    left: 25%;
     width: 260px;
     height: 277px;
 }
 
 /* Desktop Widescreen */
 @media ${Media.desktop}{  
+    left: 25%;
     width: 418px;
     height: 418px;
  

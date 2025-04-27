@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     /* margin: 0;
     padding: 0; */
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   body {
