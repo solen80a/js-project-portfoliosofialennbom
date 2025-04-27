@@ -5,7 +5,7 @@ import { Button } from "./Button";
 import { TagButton } from "../components/TagButton";
 
 
-const MyWordsCardContainer = styled.article`
+const MyWordsCardContainer = styled.section`
   display: flex;
   justify-content: center;  
   align-items: center;
@@ -16,9 +16,7 @@ const MyWordsCardContainer = styled.article`
   /* Tablet */
  @media ${Media.tablet}{ 
   flex-direction: row; 
-  gap: 32px;
-  /* padding: 32px;   
-  margin: 24px; */
+  gap: 32px; 
 }
 
 /* Desktop Widescreen */
@@ -38,11 +36,7 @@ const MyWordsCardContainer = styled.article`
   }
 
 }
-
-& h3 {
-  text-align: left;
-}
-`;
+`
 
 const TagWrapper = styled.p`
   display: flex;

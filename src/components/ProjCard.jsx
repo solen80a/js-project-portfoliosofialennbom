@@ -4,8 +4,6 @@ import { H3, Body } from "./Typography"
 import { Media } from "./Media"
 
 
-
-
 const ProjectCardContainer = styled.section`
   display: flex;
   justify-content: center;
@@ -15,8 +13,9 @@ const ProjectCardContainer = styled.section`
   margin: 24px; 
 
  /* Tablet */
- @media ${Media.tablet}{  
-    height: 277px;
+ @media ${Media.tablet}{      
+    flex-direction: row; 
+    gap: 32px;
 }
 
 /* Desktop Widescreen */
@@ -34,7 +33,6 @@ const ProjectCardContainer = styled.section`
 @media ${Media.desktop}{   
     width: 100%; 
 }
-
 }
 `   
 
