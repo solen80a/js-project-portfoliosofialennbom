@@ -3,6 +3,10 @@ import { H1, Body } from "../components/Typography"
 import styled from "styled-components"
 import { Media } from "../components/Media"
 
+const ProfileWrapper = styled.section`
+max-width: 1200px;
+`
+
 const ImgContainer = styled.div`
   display: flex;  
   justify-content: center; 
@@ -125,9 +129,9 @@ const Hello = styled.p`
 export const Profile = () => {
   return (
     <section id="main-content">
+      <ProfileWrapper>
       <Hello>Hi there I´m</Hello> 
-      <H1>Sofia Lennbom</H1>
-      <Hello>Web Developer with a Background in Quality Assurance, Technical documentation and Training</Hello>
+      <H1>Sofia Lennbom</H1>      
       <ImgContainer>  
             
           <ProfileImg1 
@@ -146,11 +150,13 @@ export const Profile = () => {
           />
         
       </ImgContainer>
-      
+      <Hello>Frontend Developer with a Background in Quality Assurance, </Hello>
+      <Hello>Technical documentation and Training</Hello>
       <Body>
         I’m a developer with a curious mindset, eager to learn and build thoughtful digital experiences. I value quality—not just in code, but in the impact it creates.
         Loyal and hands-on, I’m a team player who takes initiative and enjoys tackling challenges to deliver meaningful, well-crafted solutions.
       </Body>
+      </ProfileWrapper>
     </section>
   )
   

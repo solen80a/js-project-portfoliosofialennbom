@@ -51,7 +51,7 @@ export const GlobalStyle = createGlobalStyle`
 
   section {
     display: flex;
-    padding: 64px 16px;
+    padding: 128px;
     flex-direction: column;
     align-items: center;
     gap: 16px; 

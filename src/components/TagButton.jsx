@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const TagButton =styled.button`
+font-family: poppins, sans-serif;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -10,6 +11,7 @@ border-radius: 4px;
 background-color: ${props => (props.$projtag ? "white" : "#434040")} ;
 color: ${props => (props.$projtag ? "#434040" : "white")} ;
 font-size: 16px;
-width: ${props => (props.$projtag ? "85px" : "165px")} ;
+width: ${props => (props.$projtag ? "100%" : "165px")} ;
 height: 24px;
+padding: 2px 6px;
 `

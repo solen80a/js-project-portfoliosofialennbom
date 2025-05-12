@@ -6,16 +6,16 @@ const TechWrapper = styled.section`
 background-color: #434040;
 color: white;
 gap: 16px;
-
 width: 100vw;
+padding: 128px 0px 128px 0px;
 `
 const H2 = styled.h2`
 font-size: 60px;
-  
 `
 
 const Body = styled.p`
 text-align: center; 
+max-width: 782px;  
 `
 
 export const Tech = () => {

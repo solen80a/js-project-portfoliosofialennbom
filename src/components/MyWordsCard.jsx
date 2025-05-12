@@ -9,8 +9,7 @@ const MyWordsCardContainer = styled.section`
   display: flex;
   justify-content: center;  
   align-items: center;
-  gap: 128px;
-  padding: 64px;
+  padding: 128px;  
   margin: 24px;
 
   /* Tablet */
@@ -26,6 +25,8 @@ const MyWordsCardContainer = styled.section`
     height: 418px;       
     align-items: center; 
 }
+
+
 
 & p {
   width: 80%;  
@@ -44,6 +45,10 @@ const TagWrapper = styled.p`
   align-items: center;
   gap: 6px;
   border-radius: 12px;
+
+ & button {
+  width: 142px;
+ } 
 `
 
 const MyWordsImage = styled.img`
@@ -59,7 +64,8 @@ const MyWordsImage = styled.img`
 
 /* Desktop Widescreen */
 @media ${Media.desktop}{      
-    width: 479px;      
+    width: auto; 
+    max-width: 479px;     
     
 }
 `

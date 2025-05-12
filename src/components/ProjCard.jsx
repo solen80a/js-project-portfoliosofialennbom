@@ -7,9 +7,8 @@ import { Media } from "./Media"
 const ProjectCardContainer = styled.section`
   display: flex;
   justify-content: center;
-  align-items: center; 
-  gap: 128px;
-  padding: 64px;
+  align-items: center;   
+  padding: 128px;
   margin: 24px; 
 
  /* Tablet */

@@ -10,6 +10,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 width: 100vw;
+padding: 128px 0px 128px 0px;
 
 & h2 {
   align-items: center;
@@ -23,7 +24,8 @@ flex-direction: column;
 justify-content: flex-start;
 align-items: flex-start;
 flex-wrap: wrap;
-gap: 24px;  
+gap: 24px; 
+max-width: 982px; 
 
 /* Tablet */
 @media ${Media.tablet}{    

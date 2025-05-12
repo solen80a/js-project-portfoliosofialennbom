@@ -10,7 +10,7 @@
     },
     {
       "name": "Another article",
-      "image": "assets/food.jpg", 
+      "image": "assets/seed.svg", 
       "alt": "Image of an seed growing",       
       "content": "Lorem español dolor sit amet, tortilla con queso elit. Enchiladas viverra chorizo, tacos dignissim burrito. Salsa magna guacamole, quesadilla amor tamal.",
       "link": "https://www.google.com/",
