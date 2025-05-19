@@ -43,7 +43,8 @@ export const GlobalStyle = createGlobalStyle`
     /* Desktop Widescreen */
     @media ${Media.desktop}{   
       
-      align-self: stretch;      
+      /* align-self: stretch;       */
+    
       
     }
     
@@ -51,11 +52,23 @@ export const GlobalStyle = createGlobalStyle`
 
   section {
     display: flex;
-    padding: 128px;
+    padding: 64px 16px;
     flex-direction: column;
     align-items: center;
     gap: 16px; 
-    width: 100vw;    
+    width: 100vw;
+    
+  
+
+    /* Desktop Tablet */
+    @media ${Media.tablet}{ 
+      padding: 64px 24px;
+    }
+    
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{ 
+      padding: 128px 0px;
+    }
   }
 
   div {

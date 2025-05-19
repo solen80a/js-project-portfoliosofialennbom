@@ -7,9 +7,7 @@ import { Media } from "./Media"
 const ProjectCardContainer = styled.section`
   display: flex;
   justify-content: center;
-  align-items: center;   
-  padding: 128px;
-  margin: 24px; 
+  align-items: center;     
 
  /* Tablet */
  @media ${Media.tablet}{      
@@ -20,12 +18,12 @@ const ProjectCardContainer = styled.section`
 @media ${Media.desktop}{   
     flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
     justify-content: center;  
-    height: 418px;       
+    /* height: 418px;        */
     align-items: center; 
 }
 
 & p {
-  width: 80%;
+  width: 60%;
 
   /* Desktop Widescreen */
 @media ${Media.desktop}{   

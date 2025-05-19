@@ -8,9 +8,7 @@ import { TagButton } from "../components/TagButton";
 const MyWordsCardContainer = styled.section`
   display: flex;
   justify-content: center;  
-  align-items: center;
-  padding: 128px;  
-  margin: 24px;
+  align-items: center; 
 
   /* Tablet */
  @media ${Media.tablet}{   
@@ -28,7 +26,7 @@ const MyWordsCardContainer = styled.section`
 
 
 & p {
-  width: 80%;  
+  width: 60%;  
 
   /* Desktop Widescreen */
   @media ${Media.desktop}{   
