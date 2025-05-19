@@ -1,5 +1,3 @@
-import styled from "styled-components";
-import { Media } from "../components/Media";
 import { H2 } from "../components/Typography";
 import { MyWordsCard } from "../components/MyWordsCard";
 import mywords from "../data/mywords.json";

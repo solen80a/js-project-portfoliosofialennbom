@@ -72,7 +72,6 @@ const ProfileImg1 = styled(ProfileImg)`
 
 const ProfileImg2 = styled(ProfileImg)`
   top: 0%;
-  left: 25%;
   margin: 0 auto;
   width: 144px;
   height: 154px;  
@@ -82,7 +81,7 @@ const ProfileImg2 = styled(ProfileImg)`
   
   /* Tablet */
 @media ${Media.tablet}{      
-    left: 25%;
+    /* left: 25%; */
     width: 260px;
     height: 277px;
 }
