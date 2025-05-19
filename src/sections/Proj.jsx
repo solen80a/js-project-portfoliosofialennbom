@@ -9,10 +9,11 @@ export const Proj = () => {
   return (
     <section>
     <H2>Featured Projects</H2>      
-    {projects.projects.map((project) =>{
+    {projects.projects.map((project, index) =>{
       return (
         <ProjCard
-        key={project.name} 
+        key={project.name}
+        index={index} 
         name={project.name}
         image={project.image}
         tags={project.tags.map((tag) => {

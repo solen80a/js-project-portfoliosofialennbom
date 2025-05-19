@@ -13,13 +13,12 @@ const ProjectCardContainer = styled.section`
 
  /* Tablet */
  @media ${Media.tablet}{      
-    flex-direction: row; 
     gap: 32px;
 }
 
 /* Desktop Widescreen */
 @media ${Media.desktop}{   
-    flex-direction: row;
+    flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
     justify-content: center;  
     height: 418px;       
     align-items: center; 
@@ -48,15 +47,26 @@ const TagWrapper = styled.p`
   border-radius: 12px;
 `
 
-export const ProjCard = ({ name, image, tags, content, netlify, github, netlifyIcon,
+export const ProjCard = ({ 
+  index, 
+  name, 
+  image, 
+  tags, 
+  content, 
+  netlify, 
+  github, 
+  netlifyIcon,
   netlifyAlt,
   netlifyTitle,
   githubIcon,
   githubAlt,
-  githubTitle }) => {
+  githubTitle 
+}) => {
+    const isReversed = index % 2 !== 0; // every other card
+
   return (
     <>  
-    <ProjectCardContainer>   
+    <ProjectCardContainer $reverse={isReversed}>   
       <img src={image} alt="" />      
           
       <ProjectCardContent> 

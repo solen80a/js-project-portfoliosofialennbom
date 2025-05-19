@@ -13,14 +13,13 @@ const MyWordsCardContainer = styled.section`
   margin: 24px;
 
   /* Tablet */
- @media ${Media.tablet}{ 
-  flex-direction: row; 
+ @media ${Media.tablet}{   
   gap: 32px; 
 }
 
 /* Desktop Widescreen */
 @media ${Media.desktop}{   
-    flex-direction: row;
+    flex-direction: ${({ $reverse}) => ($reverse ? "row-reverse" : "row")};
     justify-content: center;  
     height: 418px;       
     align-items: center; 
@@ -75,12 +74,22 @@ const MyWordsCardContent = styled.article`
 `
 
 
-export const MyWordsCard = ({image, alt, tag, name, content, link, myWordsIcon, 
+export const MyWordsCard = ({
+  index, 
+  image, 
+  alt, 
+  tag, 
+  name, 
+  content, 
+  link, 
+  myWordsIcon, 
   myWordsAlt, 
   myWordsTitle}) => {
+    const isreversed = index % 2 === 0;
+
   return (
     <>  
-      <MyWordsCardContainer>  
+      <MyWordsCardContainer $reverse={isreversed}>  
         <MyWordsImage src={image} alt={alt} />    
         <MyWordsCardContent>   
         <TagWrapper>

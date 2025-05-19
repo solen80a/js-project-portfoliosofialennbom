@@ -20,6 +20,7 @@ const FooterImg = styled.img`
   justify-content: center;
   align-items: center;
   width: 100vw;
+  padding: 128px 0;
    
   
   

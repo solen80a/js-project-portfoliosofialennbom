@@ -10,11 +10,12 @@ export const MyWords = () => {
     
     <section> 
     <H2>My words</H2>
-    {mywords.mywords.map((item) => {
+    {mywords.mywords.map((item, index) => {
       return (
         <> 
         <MyWordsCard 
           key={item.name}
+          index={index}
           name={item.name}
           image={item.image}
           alt={item.alt}                    
