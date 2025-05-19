@@ -14,13 +14,11 @@ const ButtonWrapper = styled.a`
   align-items: center;    
   gap: 16px;
   
-  cursor: pointer;
-  
+  cursor: pointer;  
 
   img{
   height: 31px;
-  min-width: 31px;
-  
+  min-width: 31px;  
   } 
 
   /* Desktop Widescreen */
@@ -30,17 +28,14 @@ const ButtonWrapper = styled.a`
     padding: 5px 125px 5px 16px;
     margin-right: auto;
   }
-
 `
 
 export const Button = ({  url, icon, alt, title }) => {
-  return (
-         
+  return (         
     <ButtonWrapper href={url} target="_blank" >
       <img src={icon} alt={alt} /> 
       {title}         
-    </ButtonWrapper>
-    
+    </ButtonWrapper>    
   )
 }
 

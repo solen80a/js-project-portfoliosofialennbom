@@ -3,8 +3,6 @@ import { ProjCard } from "../components/ProjCard"
 import { H2 } from "../components/Typography"
 import { TagButton } from "../components/TagButton"
 
-
-
 export const Proj = () => {
   return (
     <section>

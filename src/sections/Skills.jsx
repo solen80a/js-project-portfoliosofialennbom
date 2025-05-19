@@ -36,39 +36,32 @@ max-width: 982px;
 @media ${Media.desktop}{         
     align-items: center; 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    & button {
-      
-      
-    }
+    grid-template-columns: repeat(4, 1fr); 
 
     & div {
       grid-row: 1 / 2;
       align-items: center;
       justify-content: center;
     }
-
 }
 `
 
 const SkillsList = styled.ul`
-text-align: left;
-float: right;
-margin: 20px 0px;
-padding: 0px 25px;
+  text-align: left;
+  float: right;
+  margin: 20px 0px;
+  padding: 0px 25px;
 
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-list-style-type: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-type: none;
 
-/* Tablet */
-@media ${Media.tablet}{  
-  text-align: center;
-}
-
+    /* Tablet */
+    @media ${Media.tablet}{  
+      text-align: center;
+    }
 `
 
 export const Skills = () => {
@@ -126,7 +119,5 @@ return (
   </SkillsContainer>
   </SkillsSection>
   </>
-
 )
-
 }

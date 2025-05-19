@@ -17,8 +17,7 @@ const ProjectCardContainer = styled.section`
 /* Desktop Widescreen */
 @media ${Media.desktop}{   
     flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
-    justify-content: center;  
-    /* height: 418px;        */
+    justify-content: center;     
     align-items: center; 
 }
 
@@ -34,7 +33,6 @@ const ProjectCardContainer = styled.section`
 
 const ProjectCardContent = styled.article`
 gap: 10px;
-
 `
 
 const TagWrapper = styled.p`

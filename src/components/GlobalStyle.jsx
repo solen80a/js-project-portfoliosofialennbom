@@ -38,16 +38,7 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     height: auto;
     margin: 0;
-    border-radius: 12px;
-
-    /* Desktop Widescreen */
-    @media ${Media.desktop}{   
-      
-      /* align-self: stretch;       */
-    
-      
-    }
-    
+    border-radius: 12px;    
   }
 
   section {
@@ -56,9 +47,7 @@ export const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     align-items: center;
     gap: 16px; 
-    width: 100vw;
-    
-  
+    width: 100vw; 
 
     /* Desktop Tablet */
     @media ${Media.tablet}{ 
@@ -95,8 +84,7 @@ export const GlobalStyle = createGlobalStyle`
       width: 580px;   
       align-items: center; 
         
-      img {
-        
+      img {        
         margin-right: auto;
     }
     }

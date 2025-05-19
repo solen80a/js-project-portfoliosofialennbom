@@ -1,4 +1,3 @@
-
 import styled from "styled-components"
 
 
@@ -7,8 +6,8 @@ background-color: #434040;
 color: white;
 gap: 16px;
 width: 100vw;
-/* padding: 128px 0px 128px 0px; */
 `
+
 const H2 = styled.h2`
 font-size: 60px;
 `

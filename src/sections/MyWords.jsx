@@ -4,8 +4,7 @@ import mywords from "../data/mywords.json";
 
 
 export const MyWords = () => {
-  return (
-    
+  return (    
     <section> 
     <H2>My words</H2>
     {mywords.mywords.map((item, index) => {

@@ -44,7 +44,7 @@ height: 154px;
     height: 418px;
  
 }
-  `
+`
 
 const ProfileImg1 = styled(ProfileImg)`
   top: 0%;
@@ -56,19 +56,19 @@ const ProfileImg1 = styled(ProfileImg)`
   position: absolute;
   z-index: 1;  
   
-  /* Tablet */
-@media ${Media.tablet}{  
-    width: 260px;
-    height: 277px;
-}
+    /* Tablet */
+  @media ${Media.tablet}{  
+      width: 260px;
+      height: 277px;
+  }
 
-/* Desktop Widescreen */
-@media ${Media.desktop}{  
-    width: 418px;
-    height: 418px;
- 
-}
-  `
+  /* Desktop Widescreen */
+  @media ${Media.desktop}{  
+      width: 418px;
+      height: 418px;
+  
+  }
+`
 
 const ProfileImg2 = styled(ProfileImg)`
   top: 0%;
@@ -79,20 +79,20 @@ const ProfileImg2 = styled(ProfileImg)`
   position: absolute;
   z-index: 2;  
   
-  /* Tablet */
-@media ${Media.tablet}{      
-    /* left: 25%; */
-    width: 260px;
-    height: 277px;
-}
+    /* Tablet */
+  @media ${Media.tablet}{      
+      /* left: 25%; */
+      width: 260px;
+      height: 277px;
+  }
 
-/* Desktop Widescreen */
-@media ${Media.desktop}{  
-    left: 25%;
-    width: 418px;
-    height: 418px;
- 
-}
+  /* Desktop Widescreen */
+  @media ${Media.desktop}{  
+      left: 25%;
+      width: 418px;
+      height: 418px;
+  
+  }
 `
 
 const ProfileImg3 = styled(ProfileImg)`
@@ -105,18 +105,17 @@ const ProfileImg3 = styled(ProfileImg)`
   position: absolute;
   z-index: 1;  
   
-  /* Tablet */
-@media ${Media.tablet}{  
-    width: 260px;
-    height: 277px;
-}
+    /* Tablet */
+  @media ${Media.tablet}{  
+      width: 260px;
+      height: 277px;
+  }
 
-/* Desktop Widescreen */
-@media ${Media.desktop}{  
-    width: 418px;
-    height: 418px;
- 
-}
+  /* Desktop Widescreen */
+  @media ${Media.desktop}{  
+      width: 418px;
+      height: 418px;  
+  }
 `
 const Hello = styled.p`
   font-size: 24px; 
@@ -157,6 +156,5 @@ export const Profile = () => {
       </Body>
       </ProfileWrapper>
     </section>
-  )
-  
+  )  
 }
