@@ -5,6 +5,12 @@ import { Media } from "../components/Media"
 
 const ProfileWrapper = styled.section`
 max-width: 1200px;
+
+
+@media desktop {
+  padding: 100px;
+  margin: 100px;
+}
 `
 
 const ImgContainer = styled.div`

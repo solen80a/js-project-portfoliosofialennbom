@@ -4,7 +4,9 @@ import { Media } from "./Media";
 export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;   
-    align-items: center;    
+    align-items: center;
+    margin: 0;
+    padding: 0;    
   }
 
   body {
@@ -56,7 +58,7 @@ export const GlobalStyle = createGlobalStyle`
     
     /* Desktop Widescreen */
     @media ${Media.desktop}{ 
-      padding: 128px 0px;
+      padding: 128px 48px;      
     }
   }
 
