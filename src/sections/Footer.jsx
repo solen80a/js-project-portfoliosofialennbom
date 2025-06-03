@@ -1,6 +1,7 @@
-import { H2, Body } from "../components/Typography"
 import styled from "styled-components"
 
+import { Media } from "../components/Media"
+import { Body, H2 } from "../components/Typography"
 
 const FooterImg = styled.img`
   min-width: 164px;
@@ -9,7 +10,7 @@ const FooterImg = styled.img`
   height: 164px;
   border-radius: 50%;
   align-items: center;
-  align-self: center;
+  align-self: center;  
   `
 
 const FooterContainer = styled.footer `
@@ -20,32 +21,64 @@ const FooterContainer = styled.footer `
   justify-content: center;
   align-items: center;
   width: 100vw;
-  padding: 128px 0;
+  padding: 64px 16px;
    
-  
+    /* Tablet */
+    @media ${Media.tablet}{ 
+      padding: 64px 0px;
+    }
+    
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{       
+      padding: 128px 0px;     
+    }
   
   & p {
     font-size: 24px;    
   }
 
   & a {
-    font-size: 24px;
-    color: white;     
+    font-size: 16px;
+    color: white;
+    
+     /* Tablet */
+    @media ${Media.tablet}{ 
+      font-size: 24px;
+    }
+    
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{       
+      font-size: 24px;    
+    }
   }
   `
 
 const FooterDiv = styled.div `
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;  
   gap: 8px;
-  margin: 16px 0;
+  padding: 64px 0px 0px;  
+
+   /* Tablet */
+    @media ${Media.tablet}{
+      align-items: center;      
+    }
+    
+    /* Desktop Widescreen */
+    @media ${Media.desktop}{       
+      align-items: center;       
+    }
+
 `
 const FooterIconContainer = styled.div `
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 64px 0px;
+  gap: 32px;
 
   & .linkedin {
       filter: invert(100%);
