@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 import { Media } from "./Media";
 
 export const GlobalStyle = createGlobalStyle`
@@ -71,12 +72,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   article {
-    min-width: 479px;
+    min-width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;  
+    //padding: 0px 16px;
     
     /* Desktop Widescreen */
     @media ${Media.desktop}{ 

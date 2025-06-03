@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { Media } from "../components/Media";
-import { H3, Body } from "../components/Typography";
-import { Button } from "./Button";
-import { TagButton } from "../components/TagButton";
 
+import { Media } from "../components/Media";
+import { TagButton } from "../components/TagButton";
+import { Body, H3 } from "../components/Typography";
+import { Button } from "./Button";
 
 const MyWordsCardContainer = styled.section`
   display: flex;
@@ -23,16 +23,8 @@ const MyWordsCardContainer = styled.section`
     align-items: center; 
 }
 
-
-
 & p {
-  width: 60%;  
-
-  /* Desktop Widescreen */
-  @media ${Media.desktop}{   
-      width: 100%; 
-  }
-
+  width: 100%;  
 }
 `
 

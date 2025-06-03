@@ -1,7 +1,7 @@
-
-import { H1, Body } from "../components/Typography"
 import styled from "styled-components"
+
 import { Media } from "../components/Media"
+import { Body, H1 } from "../components/Typography"
 
 const ProfileWrapper = styled.section`
 max-width: 1200px;
@@ -86,8 +86,7 @@ const ProfileImg2 = styled(ProfileImg)`
   z-index: 2;  
   
     /* Tablet */
-  @media ${Media.tablet}{      
-      /* left: 25%; */
+  @media ${Media.tablet}{ 
       width: 260px;
       height: 277px;
   }
@@ -96,8 +95,7 @@ const ProfileImg2 = styled(ProfileImg)`
   @media ${Media.desktop}{  
       left: 25%;
       width: 418px;
-      height: 418px;
-  
+      height: 418px;  
   }
 `
 

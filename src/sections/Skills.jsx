@@ -1,7 +1,8 @@
 import styled from "styled-components";
+
 import { Media } from "../components/Media";
-import { H2} from "../components/Typography";
 import { TagButton } from "../components/TagButton";
+import { H2 } from "../components/Typography";
 
 const SkillsSection = styled.section `
 background-color: #434040;
@@ -11,7 +12,6 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100vw;
-/* padding: 128px 0px 128px 0px; */
 
 & h2 {
   align-items: center;
@@ -26,8 +26,6 @@ justify-content: flex-start;
 align-items: flex-start;
 flex-wrap: wrap;
 width: 100%;
-/* gap: 24px;  */
-/* max-width: 982px;  */
 
 /* Tablet */
 @media ${Media.tablet}{    

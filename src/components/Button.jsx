@@ -1,11 +1,11 @@
 import styled from "styled-components"
+
 import { Media } from "./Media"
 
 const ButtonWrapper = styled.a`
   display: inline-flex; 
   background-color: #434040;
-  color: white;
-  font-size: 18px;
+  color: white; 
   width: 303px;
   height: 48px;
   padding: 0px 16px;

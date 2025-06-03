@@ -1,8 +1,8 @@
-import { Button } from "./Button"
 import styled from "styled-components"
-import { H3, Body } from "./Typography"
-import { Media } from "./Media"
 
+import { Button } from "./Button"
+import { Media } from "./Media"
+import { Body, H3 } from "./Typography"
 
 const ProjectCardContainer = styled.section`
   display: flex;
@@ -22,12 +22,7 @@ const ProjectCardContainer = styled.section`
 }
 
 & p {
-  width: 60%;
-
-  /* Desktop Widescreen */
-@media ${Media.desktop}{   
-    width: 100%; 
-}
+  width: 100%;  
 }
 `   
 
@@ -35,12 +30,14 @@ const ProjectCardContent = styled.article`
 gap: 10px;
 `
 
-const TagWrapper = styled.p`
+const TagWrapper = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 6px;
   border-radius: 12px;
+  width: 100%;
 `
 
 export const ProjCard = ({ 
