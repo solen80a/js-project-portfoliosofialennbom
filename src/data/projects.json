@@ -1,13 +1,26 @@
 {
   "projects": [
     {
+      "name": "CineVault in React",
+      "image": "assets/movie_app.svg",
+      "tags": [
+        "ReactRouter",
+        "API",        
+        "HTML5",
+        "CSS3"
+      ],
+      "content": "As part of a collaborative project, we teamed up to create a multi-page React application that interacts with themoviedb.org's API.",
+      "netlify": "https://cinevaultmovie.netlify.app/",
+      "github": "https://github.com/solen80a/js-project-movies"
+    },
+    {
       "name": "Portfolio in React",
       "image": "assets/green_leaf.svg",
       "tags": [
         "HTML5",
         "CSS3",        
         "React",
-        "Node"
+        "StyledComponents"
       ],
       "content": "My portfolio display my finished projects and show my learning journey from a beginner towards a skilled developer. The portfolio are a combination of team efforts and single projects where my journey started at Technigo JavaScript bootcamp and keeps on growing with new skills and projects.",
       "netlify": "https://sofialennbom.netlify.app/",

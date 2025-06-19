@@ -76,13 +76,16 @@ return (
   <SkillsList>    
     <li>HTML5</li>
     <li>CSS3</li>
+    <li>Styled components</li>
     <li>Javascript ES6</li>
     <li>React</li>
-    <li>Styled Components</li>
+    <li>React Router</li>    
     <li>GitHub</li>
     <li>Bitbucket</li>
     <li>Jenkins</li>
-    <li>MSSQL</li>
+    <li>MSSQL</li>    
+    <li>Mongo DB</li>
+    <li>Node.js</li>     
   </SkillsList>
   <div>
     <TagButton>Toolbox</TagButton>
@@ -98,8 +101,8 @@ return (
     <TagButton>Upcomming</TagButton>
   </div>
   <SkillsList>
-    <li>Node.js</li>
-    <li>Mongo DB</li>    
+    <li>AI</li>
+    <li>Vue</li>    
   </SkillsList>
   <div>
     <TagButton>More</TagButton>
